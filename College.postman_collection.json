@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e390711a-7b93-47b7-a3d3-64f2e9327ca8",
+		"name": "College",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "departments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/department",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/department/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"IT\",\r\n    \"description\": \"Information Technology department\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/department",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
